@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import BottomMenu from "../components/BottomMenu";
 import IconsList from "../constants/IconsList";
+import Graphs from "../components/Graphs";
 
 const DashboardScreen = (props) => {
   const navigationHandler = (route) => {
@@ -14,6 +15,7 @@ const DashboardScreen = (props) => {
   iconsStatusList.home = true;
   return (
     <View style={styles.screen}>
+      <Graphs />
       <BottomMenu
         iconsStatusList={iconsStatusList}
         navigationHandler={navigationHandler}

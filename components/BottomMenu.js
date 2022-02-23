@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-evenly",
 
-    height: "10%",
+    height: Dimensions.get("window").height * 0.08,
     width: Dimensions.get("window").width,
     backgroundColor: "white",
     shadowColor: "#000",
